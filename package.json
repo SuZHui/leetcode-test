@@ -1,0 +1,19 @@
+{
+  "name": "leetcode-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.0",
+    "ts-jest": "^26.2.0",
+    "typescript": "^3.9.7"
+  }
+}
