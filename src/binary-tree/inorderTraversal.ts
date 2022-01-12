@@ -11,7 +11,7 @@ import { BTreeNode } from './create'
  */
 export function inorderTraversal<T>(root: BTreeNode) {
   const list: NonNullable<T>[] = []
-  const fn = (node: BTreeNode | undefined, arr) => {
+  const fn = (node: BTreeNode | undefined, arr: NonNullable<T>[]) => {
     if (!node) return arr
     fn(node.left, arr).push(node.val)
     return fn(node.right, arr)
