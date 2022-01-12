@@ -1,14 +1,17 @@
-import { preorderTraversal, TreeNode } from './preorderTraversal'
+import { BTreeNode, create } from './create'
+import { preorderTraversal, preorderTraversal2 } from './preorderTraversal'
 
-let node: TreeNode | null = null
-const genBTree = () => {}
+let node: BTreeNode | null
 
-// TODO: 先完成二叉树的生成
-// beforeEach(() => {
-//   node =
-// })
+beforeEach(() => {
+  node = create([1, null, 2, 3, 5, 4])
+})
 
-// test('二叉树前序遍历', () => {
-//   expect(preorderTraversal(node!)).toStrictEqual([1, null, 2, 3])
-//   expect(preorderTraversal(node!)).toStrictEqual([1, null, 2, 3])
-// })
+describe('', () => {
+  test('二叉树递归前序遍历', () => {
+    expect(preorderTraversal(node!)).toStrictEqual([1, 2, 3, 4, 5])
+  })
+  test('二叉树非递归前序遍历', () => {
+    expect(preorderTraversal2(node!)).toStrictEqual([1, 2, 3, 4, 5])
+  })
+})
