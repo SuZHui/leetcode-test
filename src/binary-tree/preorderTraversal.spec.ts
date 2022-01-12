@@ -7,11 +7,11 @@ beforeEach(() => {
   node = create([1, null, 2, 3, 5, 4])
 })
 
-describe('', () => {
-  test('二叉树递归前序遍历', () => {
+describe('二叉树的前序遍历', () => {
+  test('递归', () => {
     expect(preorderTraversal(node!)).toStrictEqual([1, 2, 3, 4, 5])
   })
-  test('二叉树非递归前序遍历', () => {
+  test('非递归', () => {
     expect(preorderTraversal2(node!)).toStrictEqual([1, 2, 3, 4, 5])
   })
 })
