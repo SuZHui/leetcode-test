@@ -12,7 +12,7 @@ export type BTreeNode = {
 type InnerIterator = (a?: BTreeNodeVal) => void
 
 export function create<T>(
-  arr: T[],
+  arr: Array<T | null>,
   iterator: InnerIterator = () => {}
 ): BTreeNode | null {
   if (arr.length <= 0 || arr[0] === null) return null
